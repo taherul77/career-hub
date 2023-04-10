@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Banner from '../Banner/Banner'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,9 +31,12 @@ const Header = () => {
                             </li>
 
                         </ul>
-                        
+
                     </div>
                 </div>
+            </div>
+            <div>
+                <Banner></Banner>
             </div>
 
         </div>

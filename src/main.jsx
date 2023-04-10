@@ -10,8 +10,6 @@ import Home from './component/Layout/Home';
 import Statistics from './component/Statistics/Statistics';
 import AppliedJobs from './component/AppliedJobs/AppliedJobs';
 import Blog from './component/Blog/Blog';
-import Banner from './component/Banner/Banner'
-
 
 
 const router = createBrowserRouter([
@@ -19,10 +17,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home></Home>,
     children:[
-      {
-        path: '/',
-        element: <Banner></Banner>,
-      },
+     
+     
       {
         path: 'statistics',
         element: <Statistics></Statistics>,
