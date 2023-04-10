@@ -7,10 +7,10 @@ const JobDetails = () => {
                 <div className="container mx-auto space-y-12">
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                         <div>
-                            <p>hi</p>
-                            <p>hi</p>
-                            <p>hi</p>
-                            <p>hi</p>
+                            <p>Job Description: </p>
+                            <p>Job Responsibility:</p>
+                            <p>Educational Requirements:</p>
+                            <p>Experiences:</p>
                         </div>
                      
                         <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
