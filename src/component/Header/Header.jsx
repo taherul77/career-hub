@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Banner from '../Banner/Banner'
+
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +14,11 @@ const Header = () => {
                         <ul className="flex items-center hidden space-x-8 lg:flex">
                             <li>
 
-                                <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/statistics">Statistics</Link>
+                                <Link className="" to="/statistics">Statistics</Link>
 
                             </li>
                             <li>
-                                <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/applied-jobs">Applied Jobs</Link>
+                                <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/applied-job">Applied Jobs</Link>
                             </li>
                             <li>
                                 <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/blog">Blog</Link>

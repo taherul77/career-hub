@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
 
 const JobDetails = () => {
@@ -6,6 +7,21 @@ const JobDetails = () => {
     const currentJobId = window.location.pathname.slice(-2);
     const singleJobData = allJobData.find((e) => e.id === currentJobId);
     console.log(singleJobData);
+
+
+
+    const setToLocalStorage = () => { 
+        const jobs = JSON.parse(localStorage.getItem("jobs")) || []; 
+        const jobExists = jobs.some((job) => job.id === singleJobData.id); 
+     
+        if (!jobExists) { 
+            jobs.push(singleJobData); 
+            localStorage.setItem("jobs", JSON.stringify(jobs)); 
+            toast.success("Job added successfully!"); 
+        } else { 
+            toast.error("You already applied this job!"); 
+        } 
+    };
     return (
         <section className="dark:bg-gray-800 ">
             <div className="container flex flex-col mx-auto lg:flex-row mb-8">
@@ -31,7 +47,7 @@ const JobDetails = () => {
                     <button
                         type="button"
                         className="px-6 py-2 font-bold text-cyan-50 border rounded-md bg-blue-500 mt-2"
-                    >
+                    onClick={()=>setToLocalStorage()}>
                         Apply Now
                     </button>
                 </div>
