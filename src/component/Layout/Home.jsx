@@ -12,7 +12,6 @@ const Home = () => {
             <Header></Header>
             <Category></Category>
             <Featured></Featured>
-           
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

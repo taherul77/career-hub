@@ -8,9 +8,7 @@ const Footer = () => {
                     <div className="lg:flex">
                         <div className="w-full -mx-6 lg:w-2/5">
                             <div className="px-6">
-                                <a href="#">
-                                    <img className="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt=""/>
-                                </a>
+                                <h1 className='text-white text-4xl font-bold pb-2'>MY CAREER</h1>
 
                                 <p className="max-w-sm mt-2 text-white">There are many variations of passages of Lorem Ipsum but the majority have suffered alteration in some form.</p>
 

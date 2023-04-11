@@ -6,10 +6,10 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div>
-            <div className="text-gray-100">
+            <div className=" bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                     <div className="relative flex items-center justify-between">
-                        <Link className="ml-2 text-xl font-bold tracking-wide text-gray-900 uppercase" to="/">Company</Link>
+                        <Link className="ml-2   tracking-wide text-3xl font-bold  text-gray-900 uppercase" to="/">MY CAREER</Link>
 
                         <ul className="flex items-center hidden space-x-8 lg:flex">
                             <li>
@@ -27,7 +27,7 @@ const Header = () => {
                         </ul>
                         <ul className="flex items-center hidden space-x-8 lg:flex">
                             <li>
-                                <Link className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none" to="/apply">Star Applying</Link>
+                                <Link className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md bg-blue-500  bg-gradient-to-r from-blue-400 to-purple-500" to="/apply">Star Applying</Link>
                             </li>
 
                         </ul>
@@ -36,7 +36,7 @@ const Header = () => {
                 </div>
             </div>
             <div>
-                <Banner></Banner>
+               
             </div>
 
         </div>
