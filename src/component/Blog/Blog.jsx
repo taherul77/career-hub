@@ -5,26 +5,25 @@ const Blog = () => {
         <div>
             <section className="dark:bg-gray-800 dark:text-gray-100">
                 <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-                    <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">How it works</p>
-                    <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
+                    
+                    <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Welcome To Blog</h2>
                     <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
                         <details open="">
-                            <summary className="py-2 outline-none cursor-pointer focus:underline">Optio maiores eligendi molestiae totam dolores similique?</summary>
+                            <summary className="py-2 outline-none cursor-pointer focus:underline"> What is the purpose of react router?</summary>
                             <div className="px-4 pb-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque in fugiat magni, quas animi enim veritatis deleniti ex. Impedit.</p>
+                                <p>ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.</p>
                             </div>
                         </details>
                         <details>
-                            <summary className="py-2 outline-none cursor-pointer focus:underline">Modi dolorem veritatis culpa quos consequuntur beatae itaque excepturi perspiciatis?</summary>
+                            <summary className="py-2 outline-none cursor-pointer focus:underline">How does Context API works?</summary>
                             <div className="px-4 pb-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae, eos explicabo odit minima libero veniam similique quibusdam doloribus facilis ipsa accusantium vel maiores corrupti! Libero voluptate a doloribus?</p>
+                                <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux. React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.</p>
                             </div>
                         </details>
                         <details>
-                            <summary className="py-2 outline-none cursor-pointer focus:underline">Magni reprehenderit possimus debitis?</summary>
+                            <summary className="py-2 outline-none cursor-pointer focus:underline">What is useRef hook in react?</summary>
                             <div className="px-4 pb-4 space-y-2">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
-                                <p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+                                <p>The useRef Hook allows us to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.</p>
                             </div>
                         </details>
                     </div>

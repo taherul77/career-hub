@@ -1,48 +1,87 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
+
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <div>
-            <div className=" bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
-                <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-                    <div className="relative flex items-center justify-between">
-                        <Link className="ml-2   tracking-wide text-3xl font-bold  text-gray-900 uppercase" to="/">MY CAREER</Link>
 
-                        <ul className="flex items-center hidden space-x-8 lg:flex">
-                            <li>
+            <div className="bg-slate-100 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4 py-5 md:py-0">
+                <div className="md:flex md:justify-around md:items-center space-y-3 md:space-y-0 md:h-20">
+                    <div className="flex justify-center md:justify-start">
+                        <Link
+                            to={"/"}
+                            className="text-4xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+                        >
+                            Perfect Career
+                        </Link>
+                    </div>
 
-                                <Link className="" to="/statistics">Statistics</Link>
+                    <div className="flex justify-center gap-5 md:flex md:justify-between md:items-center md:gap-4 font-medium">
+                        <div>
+                            <Link
+                                to={"/"}
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                }
+                            >
+                                Home
+                            </Link>
+                        </div>
 
-                            </li>
-                            <li>
-                                <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/applied-job">Applied Jobs</Link>
-                            </li>
-                            <li>
-                                <Link className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400" to="/blog">Blog</Link>
-                            </li>
+                        <div>
+                            <Link
+                                to={"/statistics"}
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                }
+                            >
+                                Statistics
+                            </Link>
+                        </div>
 
-                        </ul>
-                        <ul className="flex items-center hidden space-x-8 lg:flex">
-                            <li>
-                                <Link className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md bg-blue-500  bg-gradient-to-r from-blue-400 to-purple-500" to="/apply">Star Applying</Link>
-                            </li>
+                        <div>
+                            <Link
+                                to={"/applied-job"}
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                }
+                            >
+                                Applied Jobs
+                            </Link>
+                        </div>
 
-                        </ul>
-
+                        <div>
+                            <Link
+                                to={"/blog"}
+                                className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                }
+                            >
+                                Blog
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="hidden md:flex justify-center md:justify-end">
+                        <button
+                            type="button"
+                            className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500 "
+                        >
+                            Star Applying
+                        </button>
                     </div>
                 </div>
             </div>
-            <div>
-               
-            </div>
-
         </div>
+
     );
 };
 
 export default Header;
+
+
 
 

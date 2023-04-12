@@ -9,20 +9,32 @@ const JobFeatured = ({ job }) => {
 
     return (
 
-        <div className="p-8 space-y-3 border-2 border-blue-400rounded-xl">
+        <div className="p-8 space-y-3 border-2 border-blue-400 rounded-xl">
             <span className="inline-block text-blue-500 ">
                 <img src={logo} alt="" />
             </span>
 
             <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">{position}</h1>
             <p > {companyName}</p>
+
             <div className="flex items-center gap-2">
-                <button className="px-2 py-1  border rounded-md ">
-                    {jobType}
-                </button>
-                <button className="px-2 py-1  border rounded-md ">
-                    Full Time
-                </button>
+                <div className='border rounded-md bg-gradient-to-r from-blue-300 to-purple-300 p-[2px]'>
+                    <div className='items-center border rounded-md justify-center bg-white'>
+                        <button className="px-5 py-1 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 ">
+                            {jobType}
+                        </button>
+                    </div>
+
+                </div>
+
+                <div className='border rounded-md bg-gradient-to-r from-blue-300 to-purple-300 p-[2px]'>
+                    <div className='items-center border rounded-md justify-center bg-white'>
+                        <button className="px-5 py-1 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 ">
+                        Full Time
+                        </button>
+                    </div>
+
+                </div>
             </div>
 
             <div className="grid sm:grid-cols-2  lg:grid-cols-2">
@@ -38,12 +50,12 @@ const JobFeatured = ({ job }) => {
             </div>
             <Link to={`/job-details/${id}`}>
                 <div className='py-4'>
-                <button
-                    type="button"
-                    className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md bg-blue-500  bg-gradient-to-r from-blue-400 to-purple-500"
-                >
-                    View Details
-                </button>
+                    <button
+                        type="button"
+                        className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500"
+                    >
+                        View Details
+                    </button>
                 </div>
             </Link>
         </div>

@@ -47,7 +47,7 @@ const Featured = () => {
                         <button
                             onClick={() => setSeeAll(!seeAll)}
                             type="button"
-                            className="px-6 py-4 font-bold text-cyan-50 border rounded-md bg-blue-500 mt-2"
+                            className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500 mt-2"
                         >
                             {seeAll ? "See Less" : "See All"}
                         </button>

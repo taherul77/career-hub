@@ -23,14 +23,14 @@ const Chart = () => {
                         cx="50%"
                         cy="50%"
                         outerRadius={180}
-                        innerRadius={100}
-                        fill="#3B82F6"
+                        innerRadius={70}
+                        fill="#6d8699"
                         label
                     >
                         <Label
-                            value="Assignment Marks"
+                            value="Marks"
                             position="center"
-                            fill="#3B82F6"
+                            fill="#6d8699"
                             fontSize={20}
                             fontWeight={700}
                         />
