@@ -14,7 +14,7 @@ const JobFeatured = ({ job }) => {
                 <img src={logo} alt="" />
             </span>
 
-            <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">{position}</h1>
+            <h1 className="text-xl font-semibold text-gray-700 capitalize">{position}</h1>
             <p > {companyName}</p>
 
             <div className="flex items-center gap-2">

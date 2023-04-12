@@ -17,7 +17,7 @@ const JobDetails = () => {
         if (!jobExists) {
             jobs.push(singleJobData);
             localStorage.setItem("jobs", JSON.stringify(jobs));
-            toast.success("Job added successfully!");
+            toast.success("Job applied successfully!");
         } else {
             toast.error("You already applied this job!");
         }
