@@ -39,7 +39,7 @@ const StatisticsPage = () => {
 
                 </div>
 
-            </div>
+            </div>   
        <Chart />
     </div>
   );

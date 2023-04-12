@@ -13,6 +13,7 @@ const Chart = () => {
     ];
 
     return (
+        
         <div className="my-10">
             <ResponsiveContainer width="100%" height={400}>
                 <PieChart width={400} height={400}>
@@ -22,8 +23,8 @@ const Chart = () => {
                         data={data}
                         cx="50%"
                         cy="50%"
-                        outerRadius={180}
-                        innerRadius={70}
+                        outerRadius={150}
+                        innerRadius={60}
                         fill="#6d8699"
                         label
                     >

@@ -75,19 +75,19 @@ const AppliedJobPage = () => {
         <div className="flex justify-center md:justify-end items-center gap-2 px-5 md:px-0">
             <button
                 onClick={handleClearFilter}
-                className="px-2 py-1 font-bold text-cyan-50 border-md rounded-md bg-blue-500 bg-gradient-to-r from-purple-500 to-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500  delay-75 duration-100 transition-all"
+                className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500"
             >
                 Clear Filter
             </button>
             <button
                 onClick={handleRemoteClick}
-                className="px-2 py-1 font-bold text-cyan-50 border-md rounded-md bg-blue-500 bg-gradient-to-r from-purple-500 to-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500  delay-75 duration-100 transition-all"
+                className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500"
             >
                 Remote Job
             </button>
             <button
                 onClick={handleOnsiteClick}
-                className="px-2 py-1 font-bold text-cyan-50 border-md rounded-md bg-blue-500 bg-gradient-to-r from-purple-500 to-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500  delay-75 duration-100 transition-all"
+                className="px-6 py-2 font-bold text-cyan-50 border-md rounded-md  bg-gradient-to-r from-blue-400 to-purple-500"
             >
                 Onsite Job
             </button>
